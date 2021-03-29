@@ -1,11 +1,6 @@
-module BankingGo
+module BankingGo.com
+
+require BankingGo.com/account v0.0.0
+replace BankingGo.com/account v0.0.0 => ./account
 
 go 1.16
-
-require (
-    BankingGo.com/banking v0.0.0
-)
-
-replace (
-    BankingGo.com/banking v0.0.0 => ./banking
-)
